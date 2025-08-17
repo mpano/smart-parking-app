@@ -13,17 +13,28 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": { "googleMapsApiKey": "AIzaSyA5DuElkjQqXYNJZJbhHYoYrmchcoovIsk" }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "config": { "googleMaps": { "apiKey": "AIzaSyA5DuElkjQqXYNJZJbhHYoYrmchcoovIsk" } }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bf4b050f-3149-4b5a-b43e-a5e4813ff5c6"
+      }
+    },
+    "owner": "mpano"
   }
 }
